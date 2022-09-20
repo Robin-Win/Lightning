@@ -7,21 +7,19 @@ int x = 0;
 int y = 150;
 int ranX = (int)(Math.random()*20);
 int ranY = (int)(Math.random()*20-10);
-
+int num = (int)(Math.random()*256);
+int num2 = (int)(Math.random()*256);
+int num3 = (int)(Math.random()*256);
 void draw()
 {
   lightning();
 }
 void lightning(){
-  stroke(0, 0, 255);
   strokeWeight(5);
+  stroke(num, num2, num3);
   line(x, y, x+ranX, y+ranY);
   x = x + ranX;
   y = y + ranY;
-  int ranX = (int)(Math.random()*20);
-  int ranY = (int)(Math.random()*20-10);
-}
-void mousePressed()
-{
-
+  ranX = (int)(Math.random()*20);
+  ranY = (int)(Math.random()*20-10);
 }
