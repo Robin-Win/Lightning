@@ -3,17 +3,23 @@ void setup()
   size(400,400);
 }
 
-int ranX = (int)(Math.random()*9+1);
+int x = 0;
+int y = 150;
+int ranX = (int)(Math.random()*20);
 int ranY = (int)(Math.random()*20-10);
+
 void draw()
 {
-  for(int i = 0; i < 50; i++){
-    ranX = ranX + ranX;
-    ranY = ranY + ranY;
-line(0, 150, 5+ranX, 155+ranY);
-System.out.println(ranX);
-System.out.println(ranY);
-  }
+  lightning();
+}
+void lightning(){
+  stroke(0, 0, 255);
+  strokeWeight(5);
+  line(x, y, x+ranX, y+ranY);
+  x = x + ranX;
+  y = y + ranY;
+  int ranX = (int)(Math.random()*20);
+  int ranY = (int)(Math.random()*20-10);
 }
 void mousePressed()
 {
