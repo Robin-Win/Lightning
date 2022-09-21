@@ -1,3 +1,4 @@
+
 void setup()
 {
   size(400,400);
@@ -12,7 +13,6 @@ int num2 = (int)(Math.random()*256);
 int num3 = (int)(Math.random()*256);
 void draw()
 {
-  lightning();
 }
 void lightning(){
   strokeWeight(5);
@@ -22,4 +22,9 @@ void lightning(){
   y = y + ranY;
   ranX = (int)(Math.random()*20);
   ranY = (int)(Math.random()*20-10);
+}
+
+void mousePressed()
+{
+  lightning();
 }
