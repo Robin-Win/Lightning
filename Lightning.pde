@@ -1,5 +1,4 @@
 
-void setup()
 {
   size(400,400);
   background(70, 40, 40);
@@ -29,5 +28,9 @@ void lightning(){
 
 void mousePressed()
 {
+  ranX = (int)(Math.random()*20);
+  ranY = (int)(Math.random()*20-10);
+  for(int x = 0; x < 50; x+=1){
   lightning();
+  }
 }
