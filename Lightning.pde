@@ -2,6 +2,7 @@
 void setup()
 {
   size(400,400);
+  background(70, 40, 40);
   fill(0, 0, 0);
   text("Left Click on The Screen To Make A Lightning Bolt", 60,20);
 }
